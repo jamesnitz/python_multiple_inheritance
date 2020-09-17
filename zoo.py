@@ -1,14 +1,14 @@
-from animals import Penguin
-from habitats import Habitat
+from animals import Penguin, PaintedDog
+from habitats import Habitat, Aquarium
 
 pingu = Penguin('pingu')
+dog = PaintedDog('ralph')
 
-ocean = Habitat('ocean')
+ocean = Aquarium('ocean')
 
-ocean.add_animal(pingu)
+ocean.add_swimmer_type_check(pingu)
+ocean.add_swimmer_type_check(dog)
 
 for animal in ocean.animals:
   print(animal)
 
-
-print(ocean)
