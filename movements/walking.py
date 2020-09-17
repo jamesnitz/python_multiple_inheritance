@@ -4,5 +4,5 @@ class IWalking:
     self.walk_speed = 0
     self.legs = 0
 
-  def ru(self):
+  def run(self):
     print("The animal runs!!")
